@@ -1,0 +1,21 @@
+print("Please write the length of the first stick")
+a = raw_input()
+print("Please write the length of the second stick")
+b = raw_input()
+print("Please write the length of the third stick")
+c = raw_input()
+
+def is_triangle(num1, num2, num3):
+    num4 = 0
+    if num1 + num2 > num3:
+        num4 += 1
+    if num1 + num3 > num2:
+        num4 += 1
+    if num2 + num3 > num4:
+        num4 += 1
+    if num4 >= 1:
+        print("Yes")
+    else:
+        print("No")
+
+is_triangle(a,b,c)
